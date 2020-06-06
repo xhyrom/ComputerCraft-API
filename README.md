@@ -15,3 +15,7 @@
 pastebin run CDd1uXv6
 pastebin get CDd1uXv6 install
 ```
+
+Developers
+* 𝙃𝙮𝙧𝙤#8938
+* tntj#6356
