@@ -5,6 +5,7 @@
 # Features
 * Easy text formatting
 * Custom settings
+* Support variables
 * And more...
 
 # Examples
