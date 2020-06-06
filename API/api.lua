@@ -120,7 +120,6 @@ end
 
 if EorD == "-E" or EorD == "-e" then
 	if ForS == "-S" or ForS == "-s" then
-		color(colors.yellow)
 		encoded = xyopaasd(tBE)
 		--newsend("Original: "..text.." | Encoded: "..encoded.."","info")
 		return encoded
@@ -145,7 +144,6 @@ end
 
 if EorD == "-E" or EorD == "-e" then
 	if ForS == "-S" or ForS == "-s" then
-		color(colors.yellow)
 		decoded = xYxyxcyxvc(tBE)
 		--newsend("Original: "..text.." | Decoded: "..decoded.."","info")
 		return decoded
