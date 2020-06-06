@@ -38,29 +38,79 @@ local function get( sUrl )
     return sResponse
 end
 
-function specialsend(text,settings)
+-- SEND | WRITE
+
+function specialsend(text,settings,customprefix,customcolor)
+  if settings == "info" then
+  	term.setTextColor(colors.gray)
+  	write("[")
+  	term.setTextColor(colors.green)
+  	write("INFO")
+  	term.setTextColor(colors.gray)
+  	write("]")
+  	term.setTextColor(colors.white)
+  	print(" "..text)
+  	sleep(0.1)
+  end
+  if settings == "warn" then
+  	term.setTextColor(colors.gray)
+ 	write("[")
+  	term.setTextColor(colors.orange)
+  	write("WARN")
+  	term.setTextColor(colors.gray)
+ 	write("]")
+ 	term.setTextColor(colors.white)
+  	print(" "..text)
+  	sleep(0.1)
+  end
+  if settings == "error" or settings == "err" then
+ 	term.setTextColor(colors.gray)
+ 	write("[")
+ 	term.setTextColor(colors.red)
+ 	write("ERROR")
+  	term.setTextColor(colors.gray)
+ 	write("]")
+  	term.setTextColor(colors.white)
+  	print(" "..text)
+  	sleep(0.1)
+  end
   if settings == "log" then
+ 	term.setTextColor(colors.gray)
+ 	write("[")
+ 	term.setTextColor(colors.blue)
+ 	write("LOG")
+  	term.setTextColor(colors.gray)
+ 	write("]")
+  	term.setTextColor(colors.white)
+    print(" "..text)
+  	sleep(0.1)
+  end
+  if settings == "success" then
     term.setTextColor(colors.gray)
     write("[")
-    term.setTextColor(colors.blue)
-    write("LOG")
+    term.setTextColor(colors.green)
+    write("SUCCESS")
     term.setTextColor(colors.gray)
     write("]")
     term.setTextColor(colors.white)
     print(" "..text)
     sleep(0.1)
   end
-  if settings == "err" then
-    term.setTextColor(colors.gray)
-    write("[")
-    term.setTextColor(colors.red)
-    write("ERROR")
-    term.setTextColor(colors.gray)
-    write("]")
-    term.setTextColor(colors.white)
-    print(" "..text)
-    sleep(0.1)
+  if settings == "custom" then
+ 	term.setTextColor(colors.gray)
+ 	write("[")
+ 	term.setTextColor(customcolor)
+ 	write(customprefix)
+  	term.setTextColor(colors.gray)
+ 	write("]")
+  	term.setTextColor(colors.white)
+        print(" "..text)
+  	sleep(0.1)
   end
+
+  if settings == none then
+	print(text)
+end
 end
 
 function download(url,file)
@@ -232,34 +282,23 @@ function InstallLogs()
  
    term.setCursorPos(1,5)
    term.setBackgroundColor(colors.black)
-   fs.makeDir("API")
-   shell.run("cd /API")
-   download("https://raw.githubusercontent.com/xHyroM/ComputerCraft-API/master/API/api.lua","api.lua")
-   download("https://raw.githubusercontent.com/xHyroM/ComputerCraft-API/master/API/error.lua","error.lua")
- 
-   os.loadAPI("/API/error.lua")
-   os.loadAPI("/API/api.lua")
- 
-   api.newsend("Creating temp file!","info")
-   api.sleep(0.5)
-   api.newsend("Installation closed!","error")
-   api.sleep(0.4)
-   api.newsend("Not found API version","error")
-   api.sleep(0.4)
-   api.newsend("Repair computer...","warn")
-   api.sleep(0.2)
-   api.newsend("Please dont off computer!","custom","SYSTEM",colors.orange)
-   api.sleep(2)
-   api.newsend("Computer repaired!","custom","SUCCESS",colors.green)
-   api.sleep(0.4)
-   api.newsend("Temp file deleted!","info")
-   api.sleep(0.4)
-   api.newsend("Restarting computer!","log")
-   fs.delete("API")
-   fs.delete(".sys")
-   fs.delete(".craftos")
-   fs.delete("startup.lua")
-   api.sleep(1)
+
+   specialsend("Creating temp file!","info")
+   os.sleep(0.5)
+   specialsend("Installation closed!","error")
+   os.sleep(0.4)
+   specialsend("Not found API version","error")
+   os.sleep(0.4)
+   specialsend("Repair computer...","warn")
+   os.sleep(0.2)
+   specialsend("Please dont off computer!","custom","SYSTEM",colors.orange)
+   os.sleep(2)
+   specialsend("Computer repaired!","custom","SUCCESS",colors.green)
+   os.sleep(0.4)
+   specialsend("Temp file deleted!","info")
+   os.sleep(0.4)
+   specialsend("Restarting computer!","log")
+   os.sleep(1)
    os.reboot()
    return
  
