@@ -1,6 +1,3 @@
-# Text Api
---
-
 # Features
 * Easy text formatting
 * Custom settings
