@@ -9,10 +9,10 @@
 
 # Examples
 * api.login("name", "pass")
-* api.mrandom(1, 60)
+* write(api.mrandom(1, 60))
 * api.randomcolor()
-* api.encode("text")
-* api.decode("text")
+* write(api.encode("text"))
+* write(api.decode("text"))
 
 # Install
 ```
