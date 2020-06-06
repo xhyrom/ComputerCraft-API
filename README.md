@@ -1,4 +1,6 @@
-![Logo](https://upload.hicoria.com/files/Gsp97ZHy.PNG)
+<div style="width:100px !important;">
+  <img src="https://upload.hicoria.com/files/Gsp97ZHy.PNG" style="height: 51px !important;width: 217px !important;">
+  </div>
 
 # Features
 * Easy text formatting
