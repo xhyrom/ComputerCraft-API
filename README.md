@@ -22,6 +22,14 @@ pastebin get CDd1uXv6 install
 wget https://raw.githubusercontent.com/xHyroM/ComputerCraft-API/master/install.lua install.lua
 ```
 
+# Uninstall
+```
+pastebin run YscXfmaW
+pastebin get YscXfmaW uninstall
+
+wget https://raw.githubusercontent.com/xHyroM/ComputerCraft-API/master/uninstall.lua uninstall.lua
+```
+
 # Developers
 * 𝙃𝙮𝙧𝙤#8938
 * tntj#6356
