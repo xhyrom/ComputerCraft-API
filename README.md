@@ -3,6 +3,13 @@
 * Custom settings
 * And more...
 
+# Examples
+* api.login("name", "pass")
+* api.mrandom(1, 60)
+* api.randomcolor()
+* api.encode("text")
+* api.decode("text")
+
 # Install
 ```
 pastebin run CDd1uXv6
