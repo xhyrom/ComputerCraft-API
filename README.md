@@ -1,3 +1,5 @@
+<img src="https://upload.hicoria.com/files/Gsp97ZHy.PNG">
+
 # Features
 * Easy text formatting
 * Custom settings
