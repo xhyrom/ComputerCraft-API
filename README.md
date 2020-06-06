@@ -14,6 +14,8 @@
 ```
 pastebin run CDd1uXv6
 pastebin get CDd1uXv6 install
+
+wget https://raw.githubusercontent.com/xHyroM/ComputerCraft-API/master/install.lua install.lua
 ```
 
 # Developers
