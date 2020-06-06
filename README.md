@@ -1,4 +1,4 @@
-<img src="https://upload.hicoria.com/files/Gsp97ZHy.PNG" style="height: 50px">
+<img src="https://upload.hicoria.com/files/Gsp97ZHy.PNG" style="height: 30px">
 
 # Features
 * Easy text formatting
