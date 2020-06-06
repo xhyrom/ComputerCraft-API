@@ -1,5 +1,10 @@
-# ComputerCraft-API
-This is a computer craft API for easy text and more
+# Text Api
+--
+
+# Features
+* Easy text formatting
+* Custom settings
+* And more...
 
 # Install
 ```
