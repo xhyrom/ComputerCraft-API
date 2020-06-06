@@ -122,7 +122,8 @@ if EorD == "-E" or EorD == "-e" then
 	if ForS == "-S" or ForS == "-s" then
 		color(colors.yellow)
 		encoded = xyopaasd(tBE)
-		newsend("Original: "..text.." | Encoded: "..encoded.."","info")
+		--newsend("Original: "..text.." | Encoded: "..encoded.."","info")
+		return encoded
 	else
 		return
 	end
@@ -146,7 +147,8 @@ if EorD == "-E" or EorD == "-e" then
 	if ForS == "-S" or ForS == "-s" then
 		color(colors.yellow)
 		decoded = xYxyxcyxvc(tBE)
-		newsend("Original: "..text.." | Decoded: "..decoded.."","info")
+		--newsend("Original: "..text.." | Decoded: "..decoded.."","info")
+		return decoded
 	else
 		return
 	end
@@ -170,7 +172,7 @@ function mrandom(small,big)
 	return
     end
 	
-	print(math.random(small, big))
+	return math.random(small, big)
 end
 
 -- LOGIN API
@@ -274,18 +276,18 @@ end
 -- GET API
 
 function getID()
-	print(os.getComputerID())
+	return os.getComputerID()
 end
 
 function getId()
-	print(os.getComputerID())
+	return os.getComputerID()
 end
 
 function getLabel()
    if os.getComputerLabel() == null then
 	newsend("Label not set!", "warn")
    else
-	print(os.getComputerLabel())
+	return os.getComputerLabel()
    end
 end
 
@@ -293,7 +295,7 @@ function getLABEL()
    if os.getComputerLabel() == null then
 	newsend("Label not set!", "warn")
    else
-	print(os.getComputerLabel())
+	return os.getComputerLabel()
    end
 end
 
