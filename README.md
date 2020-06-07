@@ -22,6 +22,8 @@ ComputerCraft:
   pastebin get CDd1uXv6 install
 
   wget https://raw.githubusercontent.com/xHyroM/ComputerCraft-API/master/install.lua install.lua
+OpenComputers:
+  none
 ```
 
 # Uninstall
@@ -31,6 +33,8 @@ ComputerCraft:
   pastebin get YscXfmaW uninstall
 
   wget https://raw.githubusercontent.com/xHyroM/ComputerCraft-API/master/uninstall.lua uninstall.lua
+OpenComputers:
+  none
 ```
 
 # Developers
