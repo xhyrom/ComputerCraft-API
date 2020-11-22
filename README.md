@@ -38,5 +38,5 @@ OpenComputers:
 ```
 
 # Developers
-* 𝙃𝙮𝙧𝙤#8938
+* Hyro#8938
 * tntj#6356
